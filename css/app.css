@@ -1,0 +1,120 @@
+/*colors */
+/*#bac1b8
+#58a4b0
+#0c7c59
+#2b303a
+#d64933
+*/
+
+/* Typography */
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+
+header {
+    text-align: center;
+    color: #bac1b8;
+}
+
+header h1::after {
+	content: " ";
+	border-bottom: #bac1b8 solid;
+	border-width: 2px;
+	padding: 0;
+	align-content: center;
+	margin: .2rem 40% .2rem 40%;
+	display: block;
+}
+
+header h2 {
+    margin-top: -.4rem;
+}
+
+/* Food Menu page */
+#menu-nav {
+    margin-bottom: 4rem;
+}
+
+#menu-nav ul {
+    margin: 0 0;
+    text-align: center;    
+}
+
+#menu-nav li {
+    display: inline-block;
+    margin: 0 3rem;
+}
+
+#menu-nav a {
+    color: #bac1b8;
+}
+
+#menu-nav a:active {
+    color: #d64933;
+}
+
+#menu-nav .active {
+    color: #58a4b0;
+    font-weight: bold;
+}
+
+/* Menus (breakfast/lunch/dinner) */
+
+#breakfast-menu {
+}
+
+#lunch-menu {
+    display: none;
+}
+
+/* Menu Items */
+
+.menu-item {
+    margin-bottom: 2rem;
+}
+
+.menu-item::after {
+	content: " ";
+	border-bottom: #bac1b8 dashed;
+	border-width: 2px;
+	padding: 0 50% 0 0;
+	align-content: center;
+	margin: 0 25%;
+}
+
+.menu-img {
+    width: 100%;
+    background-color: rgb(143, 111, 70);
+    padding: 70px 25%;
+    margin-bottom: 0.7em;
+}
+
+.course {
+    color: #0c7c59;
+    margin-bottom: 1.6rem;
+}
+
+.menu-item h4 {
+    display: inline;
+    color: #58a4b0;
+}
+
+.ingredients {
+    font-size: .8em;
+    font-style: italic;
+    text-align: justify;
+}
+
+.price {
+    display: block;
+        float: right;
+}
