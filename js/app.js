@@ -1,13 +1,24 @@
 $(document).foundation()
 
+/* Menu Slider */
+document.getElementById("breaktoggle").addEventListener("click", breakfast);
+document.getElementById("lunchtoggle").addEventListener("click", lunch);
+document.getElementById("dinnertoggle").addEventListener("click", dinner);
+
 function breakfast() {
-    document.getElementById("breakfast-menu").style.display="inline";
-    document.getElementById("lunch-menu").style.display="none";
+    document.getElementById("breakfast-menu").className = "menu-active"; //make class breakfast-active
+    document.getElementById("lunch-menu").className = "lunch-inactive-right"; //make class lunch-inactive-right
+    document.getElementById("dinner-menu").className = "dinner-inactive";
 }
 function lunch() {
-    document.getElementById("lunch-menu").style.display="inline";
-    document.getElementById("breakfast-menu").style.display="none";
+    document.getElementById("lunch-menu").className = "menu-active";
+    document.getElementById("breakfast-menu").className = "breakfast-inactive";
+    document.getElementById("dinner-menu").className = "dinner-inactive";    
 }
 function dinner() {
-    document.getElementById("dinner-menu").style.display="inline";
+    document.getElementById("dinner-menu").className = "menu-active";
+    document.getElementById("breakfast-menu").className = "breakfast-inactive";
+    document.getElementById("lunch-menu").className = "lunch-inactive-left";
+    
 }
+/* END Menu Slider */

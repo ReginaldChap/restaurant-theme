@@ -8,7 +8,8 @@
   <title>Foundation for Sites</title>
   <link rel="stylesheet" href="css/foundation.css">
   <link rel="stylesheet" href="css/app.css">
-  <script src="js/menu.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -23,113 +24,151 @@
     </header>
     <div class="grid-x grid-padding-x">
       <div class="large-12 cell">
-        <div class="callout">
+        <div class="menu-container">
           <div id="menu-nav">
             <ul>
               <li>
-                <a href="#" onclick="breakfast()" class="active">Breakfast</a>
+                <a href="#" id="breaktoggle" class="menu-active">Breakfast</a>
               </li>
               <li>
-                <a href="#" onclick="lunch()">Lunch</a>
+                <a href="#" id="lunchtoggle">Lunch</a>
               </li>
               <li>
-                <a href="#">Dinner</a>
+                <a href="#" id="dinnertoggle">Dinner</a>
               </li>
             </ul>
 
           </div>
-          <div id="breakfast-menu">
-            <div class="grid-x grid-padding-x">
-              <div class="large-3 medium-4 large-offset-3 medium-offset-2 cell">
-                <h3 class="course">Irure</h3>
-                <div class="menu-item">
-                  <h4>Lorem Ipsum</h4>
-                  <p class="price">$20</p>
-                  <p class="ingredients">Sit irure enim proident ad in do esse.Laborum commodo Lorem fugiat nisi culpa ad irure occaecat.t quis
-                    id aliquip. Esse aliqua deserunt aliquip aliqua amet deserunt sit ut et ea.</p>
+          <div id="menus">
+            <div id="breakfast-menu" class="active-menu">
+              <div class="grid-x grid-padding-x">
+                <div class="large-3 medium-4 large-offset-3 medium-offset-2 cell">
+                  <h3 class="course">Irure</h3>
+                  <div class="menu-item">
+                    <h4>Lorem Ipsum</h4>
+                    <p class="price">$20</p>
+                    <p class="ingredients">Sit irure enim proident ad in do esse.Laborum commodo Lorem fugiat nisi culpa ad irure occaecat.t quis
+                      id aliquip. Esse aliqua deserunt aliquip aliqua amet deserunt sit ut et ea.</p>
+                  </div>
+                  <div class="menu-item">
+                    <img src="/img/food1.jpg" class="menu-img">
+                    <h4>Lorem Ipsum</h4>
+                    <p class="price">$20</p>
+                    <p class="ingredients">Eiusmod amet deserunt ad dolore. Sit irure enim proident ad in do esse.Laborum commodo Lorem fugiat nisi
+                      culpa ad irure occaecat.t quis id aliquip. Esse aliqua deserunt aliquip aliqua amet deserunt sit ut
+                      et ea.
+                    </p>
+                  </div>
                 </div>
-                <div class="menu-item">
-                  <img src="/img/food1.jpg" class="menu-img">
-                  <h4>Lorem Ipsum</h4>
-                  <p class="price">$20</p>
-                  <p class="ingredients">Eiusmod amet deserunt ad dolore. Sit irure enim proident ad in do esse.Laborum commodo Lorem fugiat nisi
-                    culpa ad irure occaecat.t quis id aliquip. Esse aliqua deserunt aliquip aliqua amet deserunt sit ut et
-                    ea.
-                  </p>
-                </div>
-              </div>
-              <div class="large-3 medium-4 cell">
-                <h3 class="course">Culpa</h3>
-                <div class="menu-item">
-                  <h4>Lorem Ipsum</h4>
-                  <p class="price">$20</p>
-                  <p class="ingredients">Sit irure enim proident ad in do esse.Laborum commodo Lorem fugiat nisi culpa ad irure occaecat.t quis
-                    id aliquip. Esse aliqua deserunt aliquip aliqua amet deserunt sit ut et ea.</p>
-                </div>
-                <div class="menu-item">
-                  <img src="/img/food1.jpg" class="menu-img">
-                  <h4>Lorem Ipsum</h4>
-                  <p class="price">$20</p>
-                  <p class="ingredients">Eiusmod amet deserunt ad dolore. Sit irure enim proident ad in do esse.Laborum commodo Lorem fugiat nisi
-                    culpa ad irure occaecat.t quis id aliquip. Esse aliqua deserunt aliquip aliqua amet deserunt sit ut et
-                    ea.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="lunch-menu">
-            <div class="grid-x grid-padding-x">
-              <div class="large-3 medium-4 large-offset-3 medium-offset-2 cell">
-                <h3 class="course">Entree</h3>
-                <div class="menu-item">
-                  <h4>Lorem Ipsum</h4>
-                  <p class="price">$20</p>
-                  <p class="ingredients">Sit irure enim proident ad in do esse.Laborum commodo Lorem fugiat nisi culpa ad irure occaecat.t quis
-                    id aliquip. Esse aliqua deserunt aliquip aliqua amet deserunt sit ut et ea.</p>
-                </div>
-                <div class="menu-item">
-                  <img src="/img/food1.jpg" class="menu-img">
-                  <h4>Lorem Ipsum</h4>
-                  <p class="price">$20</p>
-                  <p class="ingredients">Eiusmod amet deserunt ad dolore. Sit irure enim proident ad in do esse.Laborum commodo Lorem fugiat nisi
-                    culpa ad irure occaecat.t quis id aliquip. Esse aliqua deserunt aliquip aliqua amet deserunt sit ut et
-                    ea.
-                  </p>
-                </div>
-              </div>
-              <div class="large-3 medium-4 cell">
-                <h3 class="course">Main</h3>
-                <div class="menu-item">
-                  <h4>Lorem Ipsum</h4>
-                  <p class="price">$20</p>
-                  <p class="ingredients">Sit irure enim proident ad in do esse.Laborum commodo Lorem fugiat nisi culpa ad irure occaecat.t quis
-                    id aliquip. Esse aliqua deserunt aliquip aliqua amet deserunt sit ut et ea.</p>
-                </div>
-                <div class="menu-item">
-                  <img src="/img/food1.jpg" class="menu-img">
-                  <h4>Lorem Ipsum</h4>
-                  <p class="price">$20</p>
-                  <p class="ingredients">Eiusmod amet deserunt ad dolore. Sit irure enim proident ad in do esse.Laborum commodo Lorem fugiat nisi
-                    culpa ad irure occaecat.t quis id aliquip. Esse aliqua deserunt aliquip aliqua amet deserunt sit ut et
-                    ea.
-                  </p>
+                <div class="large-3 medium-4 cell">
+                  <h3 class="course">Culpa</h3>
+                  <div class="menu-item">
+                    <h4>Lorem Ipsum</h4>
+                    <p class="price">$20</p>
+                    <p class="ingredients">Sit irure enim proident ad in do esse.Laborum commodo Lorem fugiat nisi culpa ad irure occaecat.t quis
+                      id aliquip. Esse aliqua deserunt aliquip aliqua amet deserunt sit ut et ea.</p>
+                  </div>
+                  <div class="menu-item">
+                    <img src="/img/food1.jpg" class="menu-img">
+                    <h4>Lorem Ipsum</h4>
+                    <p class="price">$20</p>
+                    <p class="ingredients">Eiusmod amet deserunt ad dolore. Sit irure enim proident ad in do esse.Laborum commodo Lorem fugiat nisi
+                      culpa ad irure occaecat.t quis id aliquip. Esse aliqua deserunt aliquip aliqua amet deserunt sit ut
+                      et ea.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-            <!--<div class="large-4 medium-4 cell">
-                <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
-              </div>-->
+            <div id="lunch-menu" class="lunch-inactive-right">
+              <div class="grid-x grid-padding-x">
+                <div class="large-3 medium-4 large-offset-3 medium-offset-2 cell">
+                  <h3 class="course">Entree</h3>
+                  <div class="menu-item">
+                    <h4>Lorem Ipsum</h4>
+                    <p class="price">$20</p>
+                    <p class="ingredients">Sit irure enim proident ad in do esse.Laborum commodo Lorem fugiat nisi culpa ad irure occaecat.t quis
+                      id aliquip. Esse aliqua deserunt aliquip aliqua amet deserunt sit ut et ea.</p>
+                  </div>
+                  <div class="menu-item">
+                    <img src="/img/food1.jpg" class="menu-img">
+                    <h4>Lorem Ipsum</h4>
+                    <p class="price">$20</p>
+                    <p class="ingredients">Eiusmod amet deserunt ad dolore. Sit irure enim proident ad in do esse.Laborum commodo Lorem fugiat nisi
+                      culpa ad irure occaecat.t quis id aliquip. Esse aliqua deserunt aliquip aliqua amet deserunt sit ut
+                      et ea.
+                    </p>
+                  </div>
+                </div>
+                <div class="large-3 medium-4 cell">
+                  <h3 class="course">Main</h3>
+                  <div class="menu-item">
+                    <h4>Lorem Ipsum</h4>
+                    <p class="price">$20</p>
+                    <p class="ingredients">Sit irure enim proident ad in do esse.Laborum commodo Lorem fugiat nisi culpa ad irure occaecat.t quis
+                      id aliquip. Esse aliqua deserunt aliquip aliqua amet deserunt sit ut et ea.</p>
+                  </div>
+                  <div class="menu-item">
+                    <img src="/img/food1.jpg" class="menu-img">
+                    <h4>Lorem Ipsum</h4>
+                    <p class="price">$20</p>
+                    <p class="ingredients">Eiusmod amet deserunt ad dolore. Sit irure enim proident ad in do esse.Laborum commodo Lorem fugiat nisi
+                      culpa ad irure occaecat.t quis id aliquip. Esse aliqua deserunt aliquip aliqua amet deserunt sit ut
+                      et ea.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="dinner-menu" class="dinner-inactive">
+              <div class="grid-x grid-padding-x">
+                <div class="large-3 medium-4 large-offset-3 medium-offset-2 cell">
+                  <h3 class="course">Dinner Entree</h3>
+                  <div class="menu-item">
+                    <h4>Lorem Ipsum</h4>
+                    <p class="price">$20</p>
+                    <p class="ingredients">Sit irure enim proident ad in do esse.Laborum commodo Lorem fugiat nisi culpa ad irure occaecat.t quis
+                      id aliquip. Esse aliqua deserunt aliquip aliqua amet deserunt sit ut et ea.</p>
+                  </div>
+                  <div class="menu-item">
+                    <img src="/img/food1.jpg" class="menu-img">
+                    <h4>Lorem Ipsum</h4>
+                    <p class="price">$20</p>
+                    <p class="ingredients">Eiusmod amet deserunt ad dolore. Sit irure enim proident ad in do esse.Laborum commodo Lorem fugiat nisi
+                      culpa ad irure occaecat.t quis id aliquip. Esse aliqua deserunt aliquip aliqua amet deserunt sit ut
+                      et ea.
+                    </p>
+                  </div>
+                </div>
+                <div class="large-3 medium-4 cell">
+                  <h3 class="course">Dinner Main</h3>
+                  <div class="menu-item">
+                    <h4>Lorem Ipsum</h4>
+                    <p class="price">$20</p>
+                    <p class="ingredients">Sit irure enim proident ad in do esse.Laborum commodo Lorem fugiat nisi culpa ad irure occaecat.t quis
+                      id aliquip. Esse aliqua deserunt aliquip aliqua amet deserunt sit ut et ea.</p>
+                  </div>
+                  <div class="menu-item">
+                    <img src="/img/food1.jpg" class="menu-img">
+                    <h4>Lorem Ipsum</h4>
+                    <p class="price">$20</p>
+                    <p class="ingredients">Eiusmod amet deserunt ad dolore. Sit irure enim proident ad in do esse.Laborum commodo Lorem fugiat nisi
+                      culpa ad irure occaecat.t quis id aliquip. Esse aliqua deserunt aliquip aliqua amet deserunt sit ut
+                      et ea.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <script></script>
-  <script src="js/vendor/jquery.js"></script>
-  <script src="js/vendor/what-input.js"></script>
-  <script src="js/vendor/foundation.js"></script>
-  <script src="js/app.js"></script>
+    <script></script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>

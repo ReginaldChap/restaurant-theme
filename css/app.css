@@ -40,6 +40,10 @@ header h2 {
 }
 
 /* Food Menu page */
+.menu-container {
+    position: relative;
+}
+
 #menu-nav {
     margin-bottom: 4rem;
 }
@@ -70,10 +74,50 @@ header h2 {
 /* Menus (breakfast/lunch/dinner) */
 
 #breakfast-menu {
+    position: absolute;
+    display: block;
 }
 
 #lunch-menu {
-    display: none;
+    position: absolute;
+    display: block;
+}
+
+.menu-active {
+    transition: all 0.3s, opacity 0.3s ease;
+    opacity: 1;
+    transform: translateX(0px);    
+    height: auto;
+}
+
+.breakfast-inactive {
+    transition: all 0.3s;
+    transition-delay: all 3s;
+    opacity: 0;
+    transform: translateX(-100px);
+   overflow: hidden;
+}
+
+.lunch-inactive-right {
+    transition: all 0.3s;
+    transition-delay: all 3s;
+    opacity: 0;
+    transform: translateX(200px);
+   overflow: hidden;
+}
+.lunch-inactive-left {
+    transition: all 0.3s;
+    transition-delay: all 3s;
+    opacity: 0;
+    transform: translateX(-200px);
+   overflow: hidden;
+}
+.dinner-inactive {
+    transition: all 0.3s;
+    transition-delay: all 3s;
+    opacity: 0;
+    transform: translateX(200px);
+   overflow: hidden;
 }
 
 /* Menu Items */
