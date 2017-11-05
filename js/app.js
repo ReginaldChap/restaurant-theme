@@ -1,5 +1,19 @@
 $(document).foundation()
 
+/* Main Nav  */
+document.getElementById("burger-container").addEventListener("click", function () {
+    mainNavToggle(document.getElementById("nav-menu").className); 
+});
+
+function mainNavToggle(currentClass) {
+        console.log (currentClass);
+    if (currentClass === "nav-hidden") {
+        document.getElementById("nav-menu").className = "nav-show";
+    } else {
+        document.getElementById("nav-menu").className = "nav-hidden";
+    }
+};
+
 /* Menu Slider */
 document.getElementById("breaktoggle").addEventListener("click", breakfast);
 document.getElementById("lunchtoggle").addEventListener("click", lunch);
