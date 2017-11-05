@@ -130,6 +130,16 @@ header h2 {
 	line-height: 0;
 }
 
+.main-nav-menu li a {
+	color: #f7f7f7;
+}
+
+
+
+.main-nav-menu li a:hover {
+	color: #A49566;
+}
+
 /* Food Menu page */
 .menu-container {
     position: relative;
@@ -141,7 +151,7 @@ header h2 {
 
 #menu-nav ul {
     margin: 0 0;
-    text-align: center;    
+    text-align: center;     
 }
 
 #menu-nav li {
@@ -149,13 +159,22 @@ header h2 {
     margin: 0 3rem;
 }
 
-#menu-nav a {
+#menu-nav li a {
     transition: all 0.4s;
-    
     color: #A49566;
+    display: inline-block;
+    text-align: center;
 }
-#menu-nav a:hover {
+#menu-nav li a:hover {
     color: #5A2411;
+}
+#menu-nav li a::after {
+    display: block;
+    content: attr(title);
+    font-weight: bold;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
 }
 
 
@@ -164,7 +183,7 @@ header h2 {
 }
 
 #menu-nav .active {
-    color: #58a4b0;
+    color: #5A2411;
     font-weight: bold;
 }
 
