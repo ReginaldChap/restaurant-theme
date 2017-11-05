@@ -45,7 +45,7 @@ h5 {
 }
 
 h2 {
-    text-align: center;
+    text-align: left;
     color: #A49566;    
 }
 
@@ -64,6 +64,7 @@ header h1 {
 	margin-top: 1.5rem;
 }
 header h2 {
+    text-align: center;
     color: #f7f7f7;
 }
 
@@ -79,6 +80,10 @@ header h1::after {
 
 header h2 {
     margin-top: -.4rem;
+}
+
+.menu-heading {
+    text-align: center;
 }
 
 /*Nav Menu*/
