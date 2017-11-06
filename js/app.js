@@ -6,13 +6,14 @@ document.getElementById("burger-container").addEventListener("click", function (
 });
 
 function mainNavToggle(currentClass) {
-        console.log (currentClass);
     if (currentClass === "nav-hidden") {
         document.getElementById("nav-menu").className = "nav-show";
     } else {
         document.getElementById("nav-menu").className = "nav-hidden";
     }
 };
+
+/*TODO: tidy menu slide, creat function and pass arguments as in Main Nav */
 
 /* Menu Slider */
 document.getElementById("breaktoggle").addEventListener("click", breakfast);
