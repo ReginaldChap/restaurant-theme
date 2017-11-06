@@ -32,5 +32,9 @@ add_action( 'after_setup_theme', 'jessesrestauranttheme_setup' );
 function jessesrestauranttheme_scripts_and_styles() {
     wp_enqueue_style( 'style', get_stylesheet_uri() );
     wp_enqueue_style( 'foundation', get_template_directory_uri() . '/css/foundation.css',false,'6.4','all');
+    wp_enqueue_style( 'app', get_template_directory_uri() . '/css/app.css' );
+    wp_enqueue_script( 'app', get_template_directory_uri() . '/js/app.js' );
 }
 add_action( 'wp_enqueue_scripts', 'jessesrestauranttheme_scripts_and_styles');
+
+
