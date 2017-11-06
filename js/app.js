@@ -1,4 +1,4 @@
-$(document).foundation()
+jQuery(document).foundation()
 
 /* Main Nav  */
 document.getElementById("burger-container").addEventListener("click", function () {

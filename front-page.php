@@ -7,6 +7,6 @@
 ?>
 <?php get_header(); ?>
 
-<!-- Stuff will go here ?>
+<!-- Stuff will go here -->
 
 <?php get_footer(); ?>
